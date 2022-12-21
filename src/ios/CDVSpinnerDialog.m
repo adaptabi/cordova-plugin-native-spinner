@@ -36,7 +36,7 @@
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     BOOL landscape = (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight);
     if(landscape){
-        return CGRectMake( 0.0f, 0.0f, [UIScreen mainScreen].bounds.size.height, [[UIScreen mainScreen]bounds].size.width);
+        return CGRectMake( 100.0f, -100.0f, [UIScreen mainScreen].bounds.size.height, [[UIScreen mainScreen]bounds].size.width);
     }
     return CGRectMake( 0.0f, 0.0f, [[UIScreen mainScreen]bounds].size.width, [UIScreen mainScreen].bounds.size.height);
 }
